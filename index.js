@@ -1,4 +1,4 @@
-import sharp from 'sharp';
+const sharp = require('sharp');
 
 function resize(input, output, width, height) {
   return new Promise((resolve, reject) => {
@@ -14,4 +14,6 @@ function resize(input, output, width, height) {
   });
 }
 
-export default resize;
+module.exports = {
+  resize
+}

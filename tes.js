@@ -1,6 +1,6 @@
-import resize from "./index.js";
+const resizer = require('./index.js')
 
-resize('source', 'destination', 1000, 300)
+resizer.resize('source', 'destination', 1000, 300)
     .then(info => {
         console.log(info);
     })
